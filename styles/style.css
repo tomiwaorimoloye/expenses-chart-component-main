@@ -219,8 +219,3 @@ hr {
 	display: flex;
 	flex-direction: column-reverse;
 }
-
-/* footer */
-footer {
-	visibility: hidden;
-}
