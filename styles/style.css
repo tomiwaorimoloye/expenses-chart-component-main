@@ -38,10 +38,11 @@ body {
 	align-items: center;
 	flex-direction: column;
 	background-color: var(--cream);
+	padding-inline: 15px;
 }
 
 main {
-	margin: 50px auto;
+	margin: 67px auto;
 	width: 540px;
 }
 
@@ -54,6 +55,20 @@ h1 {
 section {
 	border-radius: 15px;
 	padding-inline: 40px;
+}
+
+@media only screen and (max-width: 575px) {
+	html {
+		font-size: 14px;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	section {
+		padding-inline: 20px;
+	}
 }
 
 /* heading */
@@ -72,8 +87,24 @@ section {
 	right: 40px;
 }
 
-p.heading__price {
+.heading__price {
 	font-size: 2rem;
+}
+
+@media only screen and (max-width: 575px) {
+	h1 {
+		font-size: 1.2rem;
+		margin-bottom: 5px;
+	}
+
+	.heading {
+		padding-block: 20px;
+		margin-bottom: 15px;
+	}
+
+	.heading__logo {
+		right: 20px;
+	}
 }
 
 /* chart */
@@ -92,6 +123,17 @@ hr {
 	border: 1px solid var(--cream);
 	border-radius: 5px;
 	margin: 35px 0;
+}
+
+@media only screen and (max-width: 575px) {
+	h2 {
+		font-size: 1.75rem;
+		margin-bottom: 10px;
+	}
+
+	hr {
+		margin: 25px 0;
+	}
 }
 
 /* graph */
